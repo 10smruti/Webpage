@@ -1,0 +1,85 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial scale=1">
+	<title>registration page</title>
+	<style type="text/css">
+		body{
+			font-family: sans-serif;
+			background-color: black;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		h1{
+			text-align: center;
+			font-weight: bold;
+			padding: 20px;
+			font-size: 28px;
+		}
+		.container{
+			padding: 14px;
+			background-color: white;
+		}
+		label{
+			color: black;
+			font-family: sans-serif;
+			font-size: 18px;
+		}
+		input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.registerbtn {
+  background-color: green;
+  color: white;
+  padding: 15px 15px;
+  margin: 5px 0;
+  border: none;
+  width: 100%;
+ 
+}
+
+.registerbtn:hover {
+  opacity: 0.9;
+}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+	
+	<form action="index.php" method="post">
+		<h1>Registration Page</h1><hr>
+			<label><b>Username : </b></label>
+			<input type="text" name="username" placeholder="username" >
+			<br><br>
+			<label><b>Date of birth : </b></label>
+           <input type="date" name="dd-mm-yy" placeholder="dd-mm-yy">
+           <br><br>
+			<label><b>E-mail : </b></label>
+			<input type="text" name="email" placeholder="email">
+			<br><br>
+           <label><b>Password : </b></label>
+           <input type="Password" name="Password" placeholder="Password">
+           <br><br>
+           <label><b>Confirm Password : </b></label>
+           <input type="Password" name="Confirm" placeholder="Confirm Password">
+            <br><br>
+            <button type="submit" class="registerbtn">Register</button>
+          
+
+
+		</form>
+	</div>
+	
+
+</body>
+</html>
